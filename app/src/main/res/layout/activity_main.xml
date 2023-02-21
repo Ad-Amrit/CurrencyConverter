@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:text="Currency Converter" />
+            android:text="@string/currency_converter" />
     </LinearLayout>
 
     <LinearLayout
@@ -28,14 +28,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enter The Amount" />
+            android:text="@string/enter_the_amount" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:id="@+id/txtamount"
-            />
+            android:id="@+id/TVamount"
+            android:autofillHints="amount"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
 
     </LinearLayout>
 
@@ -48,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="From" />
+            android:text="@string/from" />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -68,7 +70,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="To" />
+            android:text="@string/to" />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -88,9 +90,10 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Convert"
+            android:text="@string/convert"
             android:background="@color/design_default_color_on_primary"
             android:id="@+id/btn1"/>
+    </LinearLayout>
 
 
 </LinearLayout>
